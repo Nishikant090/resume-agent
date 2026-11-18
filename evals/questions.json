@@ -1,0 +1,22 @@
+[
+  {"id": "sql",          "question": "Tell me about your SQL work",                  "expected_tool": "search_resume", "must_include": ["sql", "40%"]},
+  {"id": "millionminds", "question": "What did you do at MillionMinds?",             "expected_tool": "search_resume", "must_include": ["payment", "role-based|rbac"]},
+  {"id": "education",    "question": "Where do you study?",                          "expected_tool": "search_resume", "must_include": ["iiit naya raipur"]},
+  {"id": "cgpa",         "question": "What is your CGPA?",                           "expected_tool": "search_resume", "must_include": ["8.3"]},
+  {"id": "hackathons",   "question": "Have you won any hackathons?",                 "expected_tool": "search_resume", "must_include": ["hack-a-sol"]},
+  {"id": "hack_teams",   "question": "How many teams competed in Hack-a-sol?",      "expected_tool": "search_resume", "must_include": ["50+"]},
+  {"id": "churn",        "question": "Tell me about the churn prediction project",   "expected_tool": "search_resume", "must_include": ["7,043", "shap"]},
+  {"id": "genai",        "question": "Have you built anything with LLMs?",           "expected_tool": "search_resume", "must_include": ["llama|langchain"]},
+  {"id": "powerbi",      "question": "Do you know Power BI?",                        "expected_tool": "search_resume", "must_include": ["power bi"]},
+  {"id": "research",     "question": "What research have you published?",            "expected_tool": "search_resume", "must_include": ["sparcqc|lattice"]},
+  {"id": "trdp",         "question": "What dashboards did you build at TRDP?",       "expected_tool": "search_resume", "must_include": ["kpi", "sku"]},
+  {"id": "hire",         "question": "Why should we hire you?",                      "expected_tool": "search_resume", "must_include": ["dashboard|kpi"]},
+  {"id": "ideas",        "question": "Product ideas for CreditSea",                  "expected_tool": "product_ideas", "must_include": ["emi"]},
+  {"id": "features",     "question": "Suggest features to improve a lending app",    "expected_tool": "product_ideas", "must_include": ["repayment|reminder"]},
+  {"id": "jd_match",     "question": "Product Manager Intern at CreditSea, an RBI-registered digital NBFC. Responsibilities: improve repayment journeys across UPI and e-NACH, design reminders and nudges, track repayment success rate, bounce rate and DPD buckets, write requirements and user stories, coordinate with engineering. Requirements: strong analytical skills, Excel and SQL basics, good communication, curiosity about fintech and lending.",
+                          "expected_tool": "match_job",     "must_include": ["sql"]},
+  {"id": "trap_google",  "question": "Has Nishikant worked at Google?",              "expected_tool": "search_resume", "must_include": [],
+                          "llm_must_include": ["no|not|doesn't|does not|hasn't|has not"]},
+  {"id": "trap_tableau", "question": "How many years of Tableau experience does he have?", "expected_tool": "search_resume", "must_include": [],
+                          "llm_must_not_include": ["years of tableau experience", "expert in tableau"]}
+]
